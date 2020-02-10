@@ -11,6 +11,8 @@ func calculate(a int, operator string, b int){
 		 fmt.Println(a-b)
 	} else if operator == "*"{
 		fmt.Println(a*b)
+	} else if operator == "/"{
+		fmt.Println(a/b)
 	}
 }
                  
@@ -19,6 +21,7 @@ func main() {
 	calculate(12, "+", 2)
 	calculate(33, "-", 5)
 	calculate(6, "*", 3)
+	calculate(12, "/", 4)
 }
 
 		
