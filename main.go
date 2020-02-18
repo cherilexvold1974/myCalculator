@@ -14,11 +14,11 @@ func calculate(a int, operator string, b int){
 	} else if operator == "/"{
 		 if b == 0{
 	 	 fmt.Println("error: b cannot = 0")
+		 } else {
+		 fmt.Println(a/b)
 		 }	
 	} else if operator != "+"||operator != "-"||operator != "*"||operator !=	  "/" {
 		fmt.Println("error: No such operator")
-	} else {
-		fmt.Println(a/b)
 	}
 }
 
@@ -31,4 +31,7 @@ func main() {
 	calculate(5, "/", 0)
         calculate(5, "😁", 1)
 	calculate(5, "😁", 0)
+	calculate(12, "/", 7)
+	calculate(3, "-", 5)
+	calculate(5, "/", 1)
 }		
