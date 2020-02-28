@@ -2,6 +2,7 @@ package main
 
 import(
 	"fmt"
+	"math"
 )
 
 func calculate(a int, operator string, b int){
@@ -17,10 +18,15 @@ func calculate(a int, operator string, b int){
 		 } else {
 		 fmt.Println(a/b)
 		 }	
-	} else if operator != "+"||operator != "-"||operator != "*"||operator !=	  "/" {
+	} else {
 		fmt.Println("error: No such operator")
 	}
 }
+
+func pwr(a float64, b float64){
+	c := math.Pow(a, b)
+         fmt.Println(" a power of b is : ", c)
+	}
 
 func main() {
 	fmt.Println("Hello world")
@@ -34,4 +40,7 @@ func main() {
 	calculate(12, "/", 7)
 	calculate(3, "-", 5)
 	calculate(5, "/", 1)
+	pwr(5, 2)
+	pwr(-5, 2)
+	pwr(5, -2)
 }		
