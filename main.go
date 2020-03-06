@@ -23,9 +23,15 @@ func calculate(a int, operator string, b int){
 	}
 }
 
+func cosine(operator string, x float64) {
+	if operator == "Cos" {
+ 		fmt.Println(math.Cos(x))
+	}
+}
+
 func pwr(a float64, b float64){
 	c := math.Pow(a, b)
-         fmt.Println(" a power of b is : ", c)
+        	 fmt.Println(" a power of b is : ", c)
 	}
 
 func main() {
@@ -43,4 +49,5 @@ func main() {
 	pwr(5, 2)
 	pwr(-5, 2)
 	pwr(5, -2)
-}		
+	cosine("Cos", 25)
+ }		
