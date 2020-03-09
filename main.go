@@ -29,6 +29,11 @@ func cosine(operator string, x float64) {
 	}
 }
 
+func anticosine(operator string, y float64) {
+	if operator == "Acos" {
+		fmt.Println(math.Acos(y))
+	}
+}
 func pwr(a float64, b float64){
 	c := math.Pow(a, b)
         	 fmt.Println(" a power of b is : ", c)
@@ -37,6 +42,7 @@ func pwr(a float64, b float64){
 func main() {
 	fmt.Println("Hello world")
 	calculate(12, "+", 2)
+
 	calculate(33, "-", 5)
 	calculate(6, "*", 3)
 	calculate(12, "/", 4)
@@ -50,4 +56,7 @@ func main() {
 	pwr(-5, 2)
 	pwr(5, -2)
 	cosine("Cos", 25)
- }		
+	anticosine("Acos", 0.5 )
+	anticosine("Acos", 0.25)
+	anticosine("Acos", 0.90630779)
+}		
