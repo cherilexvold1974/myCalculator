@@ -34,6 +34,13 @@ func anticosine(operator string, y float64) {
 		fmt.Println(math.Acos(y))
 	}
 }
+
+func sine (operator string, z float64) {
+	if operator == "Sin" {
+		fmt.Println(math.Sin(z))
+	}
+}
+
 func pwr(a float64, b float64){
 	c := math.Pow(a, b)
         	 fmt.Println(" a power of b is : ", c)
@@ -59,4 +66,5 @@ func main() {
 	anticosine("Acos", 0.5 )
 	anticosine("Acos", 0.25)
 	anticosine("Acos", 0.90630779)
+	sine("Sin", 25)
 }		
