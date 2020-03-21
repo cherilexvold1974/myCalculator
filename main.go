@@ -50,8 +50,23 @@ func antisine (operator string, q float64) {
 func pwr(a float64, b float64){
 	c := math.Pow(a, b)
         	 fmt.Println(" a power of b is : ", c)
-	}
+}
 
+func pi(m float64, operator string) {
+	Pi := 3.14
+	if operator == "+" {
+		fmt.Println(m + Pi)
+	} else if operator == "-" {
+                 fmt.Println(m- Pi)
+        } else if operator == "*" {
+                fmt.Println(m * Pi)
+        } else if operator == "/" {
+                 fmt.Println(m/Pi)
+        } else {
+                fmt.Println("error: No such operator")
+        }
+}
+	
 func main() {
 	fmt.Println("Hello world")
 	calculate(12, "+", 2)
@@ -76,4 +91,9 @@ func main() {
 	antisine("Asin", 0.5)
 	antisine("Asin", 0.25)
         antisine("Asin", 0.90630779)
-}		
+        pi(2, "+")
+	pi(10.26, "-")
+	pi(6, "*")
+	pi(9.28, "/")
+	pi(49, "😁")
+}	
